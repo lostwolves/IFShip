@@ -39,3 +39,23 @@ The dataset covers 17 categories, including:
 
 ### 🧠 Instruction Design
 Each training sample includes natural language instructions that guide the model through human-like reasoning, encouraging alignment between model predictions and domain knowledge. This structure enables effective learning of interpretable classification patterns.
+
+📥 **Download Link**: [Click to download TITANIC-FGS](https://drive.google.com/file/d/1dyvK3AJ9pnlg6u8ruHZS16TeM6hdl_SR/view?usp=drive_link)
+
+## Citation
+
+If you find our work useful in your research, please cite our paper:
+
+```
+@article{GUO2025111672,
+  title     = {IFShip: Interpretable fine-grained ship classification with domain knowledge-enhanced vision-language models},
+  journal   = {Pattern Recognition},
+  volume    = {166},
+  pages     = {111672},
+  year      = {2025},
+  issn      = {0031-3203},
+  doi       = {https://doi.org/10.1016/j.patcog.2025.111672},
+  url       = {https://www.sciencedirect.com/science/article/pii/S0031320325003322},
+  author    = {Mingning Guo and Mengwei Wu and Yuxiang Shen and Haifeng Li and Chao Tao}
+}
+```
