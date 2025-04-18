@@ -1,11 +1,18 @@
+<p align="center" width="100%">
+  <img src="imgs/IFShip.jpg" width="60%" alt="IFShip Logo">
+</p>
+
 # IFShip
 IFShip is a vision-language model for remote sensing fine-grained ship classification (RS-FGSC). It uses domain-aware CoT prompts and the TITANIC-FGS dataset to enable step-by-step visual reasoning, achieving both high accuracy and interpretability beyond models like LLaVA and MiniGPT-4.
 
-## TITANIC-FGS Dataset Overview
+# TITANIC-FGS Dataset Overview
 
 TITANIC-FGS is the first domain knowledge-enhanced, instruction-following dataset specifically designed for the Remote Sensing Fine-Grained Ship Classification (RS-FGSC) task. It simulates human-like step-by-step decision-making to train vision-language models (VLMs) for interpretable and accurate ship classification.
 
-### 🛳️ Category Coverage
+## 🧠 Instruction Design
+Each training sample includes natural language instructions that guide the model through human-like reasoning, encouraging alignment between model predictions and domain knowledge. This structure enables effective learning of interpretable classification patterns.
+
+## 🛳️ Category Coverage
 The dataset covers 17 categories, including:
 - 8 military ships:  
   C1 – Aircraft carrier  
@@ -30,19 +37,24 @@ The dataset covers 17 categories, including:
 - 1 background class:  
   C9 – Non ship
 
-### 🖼️ Data Statistics
+## 🖼️ Classification Data Statistics
 - Total images: 18,929  
   - Training: 16,876 images with multi-round CoT-style instructions (4–6 turns for ship images, 1 for non-ship)  
   - Testing: 2,053 images with fine-grained labels only  
 - Image resolution: ranges from 200×100 to 4000×2000 pixels  
 - Source: Public search engines (e.g., Google, Baidu)
 
-### 🧠 Instruction Design
-Each training sample includes natural language instructions that guide the model through human-like reasoning, encouraging alignment between model predictions and domain knowledge. This structure enables effective learning of interpretable classification patterns.
+## 🖼️ Conversation Data Statistics
+
+- **Fine-grained Ship Image Caption Dataset**  
+  This dataset contains 2,053 caption samples generated from the 2,053 test images in the TITANIC-FGS dataset. Each caption is created using a structured prompt and verified for accuracy, aiming to support image-to-text captioning tasks.
+
+- **Fine-grained Ship Image VQA Dataset**  
+  This dataset includes 11,005 visual question answering samples based on the 2,053 test images in TITANIC-FGS. Each image is associated with multiple QA pairs derived from a curated question bank, supporting fine-grained visual reasoning tasks.
 
 📥 **Download Link**: [Click to download TITANIC-FGS](https://drive.google.com/file/d/1dyvK3AJ9pnlg6u8ruHZS16TeM6hdl_SR/view?usp=drive_link)
 
-## Citation
+# Citation
 
 If you find our work useful in your research, please cite our paper:
 
